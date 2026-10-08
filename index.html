@@ -1,0 +1,235 @@
+I can’t download but I can preview the codes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LaunchForge — Turn your idea into a launch-ready product</title>
+<meta name="description" content="LaunchForge is an AI product launch copilot that turns a rough idea into a practical blueprint, roadmap and launch kit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ LANDING ============ -->
+<div id="site">
+  <header class="nav">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 L12 3 L20 20 L12 15 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span>LaunchForge</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#product">Product</a>
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn ghost" data-open-workspace>Sign in</button>
+      <button class="btn primary" data-open-workspace>Start building</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI product launch copilot</p>
+        <h1>Turn your idea into a <span class="hl">launch-ready</span> product.</h1>
+        <p class="lede">Describe what you want to build. LaunchForge returns a scoped blueprint, a prioritised roadmap and the launch assets you need to ship — in under a minute.</p>
+        <div class="hero-cta">
+          <button class="btn primary lg" data-open-workspace>Analyze an idea</button>
+          <a class="btn outline lg" href="#how">See how it works</a>
+        </div>
+        <dl class="stats">
+          <div><dt>Blueprint</dt><dd>Scope, users, stack</dd></div>
+          <div><dt>Roadmap</dt><dd>3 build phases</dd></div>
+          <div><dt>Launch kit</dt><dd>Copy that ships</dd></div>
+        </dl>
+      </div>
+
+      <aside class="preview" id="product" aria-label="Workspace preview">
+        <div class="preview-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="preview-title">workspace / analysis</span>
+        </div>
+        <div class="preview-body">
+          <p class="preview-prompt">“A tool that helps indie teams track customer interviews and turn them into product decisions.”</p>
+          <div class="tabs" role="tablist" aria-label="Preview sections">
+            <button class="tab is-active" role="tab" aria-selected="true" data-tab="blueprint">Blueprint</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="roadmap">Roadmap</button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="kit">Launch kit</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel is-active" data-panel="blueprint">
+              <ul class="lines">
+                <li><span>Primary user</span><b>Product-led teams of 2–10</b></li>
+                <li><span>Core loop</span><b>Capture → tag → decide</b></li>
+                <li><span>Stack</span><b>Next.js · Postgres · Workers</b></li>
+                <li><span>MVP cut</span><b>4 screens, no integrations</b></li>
+              </ul>
+            </div>
+            <div class="tab-panel" data-panel="roadmap">
+              <ol class="phases">
+                <li><b>Phase 1 · Week 1</b><span>Interview capture + transcript store</span></li>
+                <li><b>Phase 2 · Week 2</b><span>Theme tagging and insight digest</span></li>
+                <li><b>Phase 3 · Week 3</b><span>Shareable decision log, billing</span></li>
+              </ol>
+            </div>
+            <div class="tab-panel" data-panel="kit">
+              <ul class="lines">
+                <li><span>Positioning</span><b>Research memory for small teams</b></li>
+                <li><span>Landing headline</span><b>Stop losing what customers told you</b></li>
+                <li><span>Launch post</span><b>Drafted, 180 words</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="score-row">
+            <span class="score-label">Launch readiness</span>
+            <div class="bar"><i style="width:78%"></i></div>
+            <span class="score-val">78</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="how">
+      <header class="section-head">
+        <h2>Three steps, one pass</h2>
+        <p>No forms to fill in. One description is enough to get a structured plan you can argue with.</p>
+      </header>
+      <ol class="steps">
+        <li><span class="num">01</span><h3>Describe the idea</h3><p>A sentence or a paragraph. Rough is fine — LaunchForge reads for the user, the problem and the shape of the product.</p></li>
+        <li><span class="num">02</span><h3>Get the blueprint</h3><p>Scope, target user, core loop, suggested stack and an explicit list of what to cut from v1.</p></li>
+        <li><span class="num">03</span><h3>Ship the launch kit</h3><p>Positioning, landing copy, launch post and a readiness score that tells you what is still missing.</p></li>
+      </ol>
+    </section>
+
+    <section class="section" id="features">
+      <header class="section-head">
+        <h2>Built for people who actually ship</h2>
+        <p>Opinionated output. Editable everywhere. Nothing you have to translate into work.</p>
+      </header>
+      <div class="grid">
+        <article class="card"><h3>Scoped blueprints</h3><p>Every analysis names a primary user, a core loop and a defensible v1 boundary instead of a feature wish list.</p></article>
+        <article class="card"><h3>Phased roadmap</h3><p>Three phases with effort-weighted tasks, sized for a weekend hackathon or a three-week sprint.</p></article>
+        <article class="card"><h3>Launch kit</h3><p>Headline, subhead, value bullets and a launch announcement — copy-ready, in your product's voice.</p></article>
+        <article class="card"><h3>Readiness score</h3><p>A breakdown across clarity, scope, differentiation and go-to-market, with the specific fix for each gap.</p></article>
+        <article class="card"><h3>Session history</h3><p>Every analysis is kept in the workspace so you can compare directions before committing to one.</p></article>
+        <article class="card"><h3>Depth control</h3><p>Switch between a fast outline and a detailed plan depending on whether you are exploring or executing.</p></article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Your next product is one description away.</h2>
+      <p>Open the workspace and run your first analysis.</p>
+      <button class="btn primary lg" data-open-workspace>Start building</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© 2025 LaunchForge</span>
+    <span>Turn your idea into a launch-ready product.</span>
+  </footer>
+</div>
+
+<!-- ============ WORKSPACE ============ -->
+<div id="workspace" hidden>
+  <aside class="side">
+    <a class="brand small" href="#top" data-close-workspace>
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 L12 3 L20 20 L12 15 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span>LaunchForge</span>
+    </a>
+    <nav class="side-nav" aria-label="Workspace">
+      <button class="side-link is-active" data-view="new">New analysis</button>
+      <button class="side-link" data-view="dashboard">Dashboard</button>
+      <button class="side-link" data-view="history">History <span class="pill" id="historyCount">0</span></button>
+      <button class="side-link" data-view="settings">Settings</button>
+    </nav>
+    <div class="side-foot">
+      <button class="btn outline block" data-close-workspace>Back to site</button>
+    </div>
+  </aside>
+
+  <main class="work">
+    <header class="work-top">
+      <div>
+        <h1 id="viewTitle">New analysis</h1>
+        <p id="viewSub">Describe the product you want to build.</p>
+      </div>
+      <button class="btn primary" data-view="new">New analysis</button>
+    </header>
+
+    <section class="view is-active" data-panel-view="new">
+      <div class="composer">
+        <label class="lbl" for="ideaInput">Product idea</label>
+        <textarea id="ideaInput" rows="6" placeholder="e.g. A tool that helps indie teams track customer interviews and turn them into product decisions."></textarea>
+        <div class="chips" id="exampleChips">
+          <span class="chips-label">Try:</span>
+          <button class="chip" type="button">Expense tracking for freelancers</button>
+          <button class="chip" type="button">Marketplace for studio time</button>
+          <button class="chip" type="button">Onboarding analytics for B2B SaaS</button>
+        </div>
+        <div class="composer-foot">
+          <label class="lbl inline" for="detailSelect">Depth
+            <select id="detailSelect">
+              <option value="fast">Fast outline</option>
+              <option value="standard" selected>Standard</option>
+              <option value="deep">Detailed plan</option>
+            </select>
+          </label>
+          <button class="btn primary" id="runBtn">Generate blueprint</button>
+        </div>
+      </div>
+      <div id="results" class="results" aria-live="polite">
+        <div class="empty">
+          <h2>No analysis yet</h2>
+          <p>Enter an idea above and generate a blueprint, roadmap and launch kit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" data-panel-view="dashboard">
+      <div id="dashboard" class="results">
+        <div class="empty"><h2>Dashboard</h2><p>Run an analysis to see readiness metrics here.</p></div>
+      </div>
+    </section>
+
+    <section class="view" data-panel-view="history">
+      <div id="history" class="results">
+        <div class="empty"><h2>No saved sessions</h2><p>Analyses you run in this workspace appear here.</p></div>
+      </div>
+    </section>
+
+    <section class="view" data-panel-view="settings">
+      <div class="panel">
+        <h2>Workspace settings</h2>
+        <div class="setting">
+          <div><b>Default depth</b><p>Applied to every new analysis.</p></div>
+          <select id="defaultDetail">
+            <option value="fast">Fast outline</option>
+            <option value="standard" selected>Standard</option>
+            <option value="deep">Detailed plan</option>
+          </select>
+        </div>
+        <div class="setting">
+          <div><b>Build context</b><p>Tunes roadmap phase length.</p></div>
+          <select id="buildContext">
+            <option value="hackathon">Hackathon weekend</option>
+            <option value="sprint" selected>Three-week sprint</option>
+            <option value="quarter">Full quarter</option>
+          </select>
+        </div>
+        <div class="setting">
+          <div><b>Session data</b><p>Stored in memory for this session only.</p></div>
+          <button class="btn outline" id="clearBtn">Clear history</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
